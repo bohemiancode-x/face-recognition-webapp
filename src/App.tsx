@@ -18,7 +18,7 @@ const App: React.FC = () => {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
   const [uploadedImage, setUploadedImage] = React.useState<string | null>(null);
 
-  // Sync Tailwind's dark mode with Redux darkMode boolean
+
   React.useEffect(() => {
     const root = window.document.documentElement;
     if (darkMode) {
